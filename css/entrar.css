@@ -1,0 +1,187 @@
+body { 
+    background-color: rgb(244, 247, 252);
+}
+
+#label01 {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    color: gray;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#label02 {
+    position: fixed;
+    top: 13%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    color: gray;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#formLogin { 
+    background-color: white;
+    position: fixed;
+    width: 500px;
+    height: 350px;
+
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    box-shadow: 0px 0px 12px 1px rgb(201, 201, 201);
+}
+
+#label01_formLogin {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+}
+
+#usuario_formLogin {
+    background-color: rgb(238, 238, 238);
+    width: 90%;
+    height: 50px;
+
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Open Sans';
+
+    border-color: transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    transition: 0.3s;
+}
+
+#senha_formLogin {
+    background-color: rgb(238, 238, 238);
+    width: 90%;
+    height: 50px;
+
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Open Sans';
+
+    border-color: transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    transition: 0.3s;
+}
+
+
+::placeholder {
+    font-size: 20px;
+    opacity: 0.5;
+    font-family: 'Open Sans';
+}
+
+#btn_formLogin {
+    background-color: rgb(0, 149, 253);
+    width: 90%;
+    height: 50px;
+
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: white;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-color: transparent;
+
+    transition: 0.3s;
+}
+
+#erro_formLogin {
+    background-color: #f82d59;
+    width: 500px;
+    height: 50px;
+
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: white;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-color: transparent;
+    padding-bottom: 5px;
+
+    box-shadow: 0px 0px 12px 1px #b6aeb0;
+}
+
+#label01_formLogin {
+    margin-top: 9px;
+}
+
+/*ANIMAÇÕES*/
+#btn_formLogin:hover {
+    cursor: pointer;
+    background-color: rgb(0, 151, 229)
+}
+
+#btn_formLogin:focus {
+    cursor: pointer;
+}
+
+#senha_formLogin:focus {
+    outline: none;
+    box-shadow: 0px 0px 15px 0px rgba(87,142,224,1);
+}
+
+#usuario_formLogin:focus {
+    outline: none;
+    box-shadow: 0px 0px 15px 0px rgba(87,142,224,1);
+}

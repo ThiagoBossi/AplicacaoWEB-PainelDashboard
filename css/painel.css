@@ -1,0 +1,1077 @@
+body {
+    /*background-image: url('../imagens/bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;*/
+    background-color: rgb(236, 236, 236);
+    margin:0;
+    padding:0;
+}
+
+.cabecalho {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    background-image: url('../imagens/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    width: 100%;
+    height: 130px;
+}
+
+.divisor {
+    position: absolute;
+    top: 124px;
+    left: 0px;
+
+    background-color: rgb(0, 122, 184);
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    width: 100%;
+}
+
+.menu {
+    position: absolute;
+    top: 128px;
+    left: 0px;
+
+    background-color: rgb(0, 168, 255);
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    text-align: center;
+
+    width: 100%;
+    box-shadow: 0px 0px 14px -5px rgba(0,0,0,0.7);
+}
+
+.txtMenu {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 20px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    
+    text-decoration: none;
+    color: white;
+}
+
+.itensMenu_sair {
+    text-align: right;
+
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
+.avatarUsuario {
+    background-color: rgb(199, 199, 199);
+    background-image: url("https://cravatar.eu/avatar/Steve/50");
+
+    text-align: right;
+
+    position: absolute;
+    top: 3px;
+    right: 100px;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.formLogin {
+    margin-right: 300px;
+}
+
+.conteudo {
+    width: 100%;
+    height: 100%;
+    
+    max-width: 100%;
+    margin: auto;
+
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+}
+
+.subConteudo {
+    width: 90%;
+    height: 100%;
+
+    max-width: 90%;
+    margin: auto;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+}
+
+.painel_carregando {
+    background-color: white;
+    
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    width: 80%;
+    height: 900px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+    visibility: hidden;
+}
+
+.painel_carregado {
+    background-color: white;
+    
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    width: 80%;
+    height: 900px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+
+    visibility: visible;
+    opacity: 0;
+
+    transition: 0.3s;
+}
+
+.rodape {
+    background-color: rgb(19, 19, 19);
+
+    position: absolute;
+    top: 115%;
+    left: 0;
+
+    width: 100%;
+    height: 100px;
+}
+
+/*USUARIOS*/
+.menu_usuarios {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    background-color: rgb(0, 168, 255);
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    text-align: center;
+
+    width: 100%;
+}
+
+.txtMenu_usuarios {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 20px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    
+    text-decoration: none;
+    color: white;
+}
+
+.formCadastrar {
+    background-color: rgb(230, 230, 230);
+
+    position: absolute;
+    top: 220px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    width: 400px;
+    height: 500px;
+
+    border-radius: 10px;
+
+    display: block;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+}
+
+.conteudoForm {
+    position: absolute;
+    top: 220px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+}
+
+.txtNomeUsuario_formUsuario {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 50px;
+
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: gray;
+
+    border-color: transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.txtSenhaUsuario_formUsuario {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 50px;
+
+    position: fixed;
+    top: 115px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: gray;
+
+    border-color: transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: 0.3s;
+}
+
+.txtCargoUsuario_formUsuario {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 50px;
+
+    position: fixed;
+    top: 180px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: gray;
+
+    border-color: transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: 0.3s;
+}
+
+.cmbBoxCargoUsuario_formUsuario {
+    background-color: rgb(255, 255, 255);
+    width: 307px;
+    height: 55px;
+
+    position: fixed;
+    top: 180px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: gray;
+
+    border-color: transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.btnCadastrar_formUsuario {
+    background-color: rgb(0, 149, 253);
+    width: 150px;
+    height: 50px;
+
+    position: fixed;
+    top: 290px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: white;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-color: transparent;
+
+    transition: 0.3s;
+}
+
+.cmbBoxCargoUsuario_formUsuario option {
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Open Sans';
+
+    color: gray;
+}
+
+.label01_formUsuario{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: black;
+
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+}
+
+.label02_formUsuario {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    color: black;
+
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+}
+
+.avatarUsuarioAlterar {
+    background-color: gray;
+
+    height: 35px;
+    width: 35px;
+
+    border-radius: 5px;
+
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+}
+
+.erroExistente_formUsuario {
+    background-color: #f82d59;
+    width: 500px;
+    height: 50px;
+
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: white;
+
+    padding-top: 30px;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-color: transparent;
+    padding-bottom: 5px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+}
+
+.erroCadastro_formUsuario {
+    background-color: #f82d59;
+    width: 500px;
+    height: 50px;
+
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: white;
+
+    padding-top: 30px;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-color: transparent;
+    padding-bottom: 5px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+}
+
+.cadastroRealizado_formUsuario {
+    background-color: #38c933;
+    width: 500px;
+    height: 50px;
+
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: white;
+
+    padding-top: 30px;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-color: transparent;
+    padding-bottom: 5px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+}
+
+.alteracaoRealizada_formUsuario {
+    background-color: #38c933;
+    width: 500px;
+    height: 50px;
+
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: white;
+
+    padding-top: 30px;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-color: transparent;
+    padding-bottom: 5px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+}
+
+.erroAlteracao_formUsuario {
+    background-color: #f82d59;
+    width: 500px;
+    height: 50px;
+
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: white;
+
+    padding-top: 30px;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-color: transparent;
+    padding-bottom: 5px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+}
+
+.remocaoRealizada_formUsuario {
+    background-color: #38c933;
+    width: 500px;
+    height: 50px;
+
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: white;
+
+    padding-top: 30px;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-color: transparent;
+    padding-bottom: 5px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+}
+
+.erroRemocao_formUsuario {
+    background-color: #f82d59;
+    width: 500px;
+    height: 50px;
+
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: white;
+
+    padding-top: 30px;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-color: transparent;
+    padding-bottom: 5px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+}
+
+.corpo_tabelaUsuarios {
+    background-color: rgb(230, 230, 230);
+
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    width: 925px;
+    height: 550px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+}
+
+.corpo_tabelaNoticias {
+    background-color: rgb(230, 230, 230);
+
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    width: 900px;
+    height: 550px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+}
+
+.conteudo_tabelaUsuarios {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+}
+
+.cabecalhoLista {
+    background-color: rgb(0, 168, 255);
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    border-radius: 10px;
+
+    color: white;
+    font-weight: bold;
+    font-family: 'Open Sans';
+
+    text-align: center;
+}
+
+.itemLista {
+    background-color: white;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    border-radius: 10px;
+
+    color: gray;
+    font-weight: bold;
+    font-family: 'Open Sans';
+
+    text-align: center;
+}
+
+.txtIDUsuario_formUsuario {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+}
+
+.editarCadastro {
+    background-color: rgb(255, 211, 67);
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border-radius: 10px;
+
+    color: white;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    text-decoration: none;
+
+    text-align: center;
+}
+
+.removerCadastro {
+    background-color: #f82d59;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border-radius: 10px;
+
+    color: white;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    text-decoration: none;
+
+    text-align: center;
+}
+
+/*PUBLICACOES*/
+.formPublicacao {
+    background-color: rgb(230, 230, 230);
+
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    width: 90%;
+    height: 700px;
+
+    border-radius: 10px;
+
+    display: block;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+}
+
+.conteudoFormPublicacao {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    width: 90%;
+    height: 640px;
+}
+
+.itensCabecalho {
+    position: absolute;
+    top: 0px;
+    left: 0;
+
+    width: 100%;
+    height: 640px;
+}
+
+.itens {
+    position: absolute;
+    top: 0px;
+    left: 0;
+
+    width: 350px;
+    height: 500px;
+}
+
+.txtAutor_formPublicacao {
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height: 35px;
+
+    position: fixed;
+    top: 70px;
+    left: 0px;
+
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    color: gray;
+
+    border-color: transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: 0.3s;
+}
+
+.txtImgFundo_formPublicacao {
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height: 35px;
+
+    position: fixed;
+    top: 115px;
+    left: 0px;
+
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    color: gray;
+
+    border-color: transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: 0.3s;
+}
+
+.txtTitulo_formPublicacao {
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height: 35px;
+
+    position: fixed;
+    top: 160px;
+    left: 0px;
+
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    color: gray;
+
+    border-color: transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: 0.3s;
+}
+
+.txtSubTitulo_formPublicacao {
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height: 35px;
+
+    position: fixed;
+    top: 205px;
+    left: 0px;
+
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    color: gray;
+
+    border-color: transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: 0.3s;
+}
+
+.txtCorpo_formPublicacao {
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    height: 500px;
+
+    position: fixed;
+    top: 70px;
+    right: 10px;
+
+    font-size: 15px;
+    font-family: 'Open Sans';
+    color: gray;
+
+    border-color: transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: 0.3s;
+}
+
+.imgFundoBox {
+    background-color: rgb(255, 255, 255);
+    width: 357px;
+    height: 325px;
+
+    position: fixed;
+    top: 250px;
+    left: 0px;
+
+    border-color: transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.label01_formPublicacao {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: black;
+
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+}
+
+.btnPublicar_formPublicacao {
+    background-color: rgb(0, 149, 253);
+    width: 150px;
+    height: 50px;
+
+    position: fixed;
+    top: 598px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: white;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-color: transparent;
+
+    transition: 0.3s;
+}
+
+textarea {
+    resize: none;
+}
+
+/*ANIMAÇÕES*/
+
+.txtImgFundo_formPublicacao:focus {
+    outline: none;
+    box-shadow: 0px 0px 15px 0px rgba(87,142,224,1);
+}
+
+.txtTitulo_formPublicacao:focus {
+    outline: none;
+    box-shadow: 0px 0px 15px 0px rgba(87,142,224,1);
+}
+
+.txtSubTitulo_formPublicacao:focus {
+    outline: none;
+    box-shadow: 0px 0px 15px 0px rgba(87,142,224,1);
+}
+
+.txtCorpo_formPublicacao:focus {
+    outline: none;
+    box-shadow: 0px 0px 15px 0px rgba(87,142,224,1);
+}
+
+.btnPublicar_formPublicacao:hover {
+    cursor: pointer;
+    background-color: rgb(0, 168, 252);
+}
+
+.txtMenu:hover {
+    background-color: rgb(0, 151, 229);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.txtMenu_usuarios:hover {
+    background-color: rgb(0, 151, 229);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.noticia3_btn:hover {
+    cursor: pointer;
+    background-color: rgb(0, 168, 252);
+}
+
+.txtNomeUsuario_formUsuario:focus {
+    outline: none;
+    box-shadow: 0px 0px 15px 0px rgba(87,142,224,1);
+}
+
+.txtSenhaUsuario_formUsuario:focus {
+    outline: none;
+    box-shadow: 0px 0px 15px 0px rgba(87,142,224,1);
+}
+
+.txtCargoUsuario_formUsuario:focus {
+    outline: none;
+    box-shadow: 0px 0px 15px 0px rgba(87,142,224,1);
+}
+
+.cmbBoxCargoUsuario_formUsuario:focus {
+    outline: none;
+    box-shadow: 0px 0px 15px 0px rgba(87,142,224,1);
+}
+
+.btnCadastrar_formUsuario:hover {
+    cursor: pointer;
+    background-color: rgb(0, 151, 229)
+}
+
+.btnCadastrar_formUsuario:focus {
+    outline: none;
+    box-shadow: 0px 0px 15px 0px rgba(87,142,224,1);
+}
+
+.cabecalhoLista:hover {
+    background-color: rgb(0, 151, 229);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.itemLista:hover {
+    background-color: rgb(185, 185, 185);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.removerCadastro:hover {
+    background-color: #ee1040;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.editarCadastro:hover {
+    background-color: rgb(243, 194, 31);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.animacao01 {
+    animation : shimmer 2s 1;
+    background: linear-gradient(to right, #eff1f3 4%, #e2e2e2 25%, #eff1f3 36%);
+    background-size: 1000px 100%;
+ }
+
+ .animacao02 {
+    animation : visualizarBanner 2s 1 forwards;
+ }
+
+ .avatarUsuario:hover {
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
+ }
+
+ @keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+        visibility: visible;
+    }
+    100% {
+        background-position: 1000px 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@keyframes visualizarBanner {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}

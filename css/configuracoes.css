@@ -1,0 +1,229 @@
+.layout_formConfiguracoes {
+    background-color: rgb(230, 230, 230);
+
+    position: absolute;
+    top: 220px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    width: 400px;
+    height: 500px;
+
+    border-radius: 10px;
+
+    display: block;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+}
+
+.conteudoForm {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+}
+
+.banner1_formBanner {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 50px;
+
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: gray;
+
+    border-color: transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: 0.3s;
+}
+
+.banner2_formBanner {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 50px;
+
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: gray;
+
+    border-color: transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: 0.3s;
+}
+
+.banner3_formBanner {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 50px;
+
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: gray;
+
+    border-color: transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: 0.3s;
+}
+
+.banner4_formBanner {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 50px;
+
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: gray;
+
+    border-color: transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: 0.3s;
+}
+
+.btnSalvar_formUsuario {
+    background-color: rgb(0, 149, 253);
+    width: 150px;
+    height: 50px;
+
+    position: fixed;
+    top: 290px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: white;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-color: transparent;
+
+    transition: 0.3s;
+}
+
+.label01_formConfiguracoes {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: black;
+
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+}
+
+.alteracaoRealizada_formBanner {
+    background-color: #38c933;
+    width: 500px;
+    height: 50px;
+
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: white;
+
+    padding-top: 30px;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-color: transparent;
+    padding-bottom: 5px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+}
+
+.erroAlteracao_formBanner {
+    background-color: #f82d59;
+    width: 500px;
+    height: 50px;
+
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: white;
+
+    padding-top: 30px;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-color: transparent;
+    padding-bottom: 5px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+}
+
+/*ANIMAÇÕES*/
+
+.btnSalvar_formUsuario:hover {
+    cursor: pointer;
+    background-color: rgb(0, 168, 252);
+}
+
+.txtBannerBorda:focus {
+    outline: none;
+    box-shadow: 0px 0px 15px 0px rgba(87,142,224,1);
+}

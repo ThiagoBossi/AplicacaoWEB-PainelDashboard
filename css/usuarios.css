@@ -1,0 +1,25 @@
+body {
+    /*background-image: url('../imagens/bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;*/
+    background-color: rgb(236, 236, 236);
+    margin:0;
+    padding:0;
+}
+
+.cabecalho {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    background-image: url('../imagens/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    width: 100%;
+    height: 100px;
+}

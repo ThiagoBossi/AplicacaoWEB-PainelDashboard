@@ -1,0 +1,553 @@
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+body {
+    /*background-image: url('../imagens/bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;*/
+    background-color: rgb(236, 236, 236);
+}
+
+.cabecalho {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    background-image: url('../imagens/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    width: 100%;
+    height: 130px;
+}
+
+.divisor {
+    position: absolute;
+    top: 124px;
+    left: 0px;
+
+    background-color: rgb(0, 122, 184);
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    width: 100%;
+}
+
+.menu {
+    position: absolute;
+    top: 128px;
+    left: 0px;
+
+    background-color: rgb(0, 168, 255);
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    text-align: center;
+
+    width: 100%;
+    box-shadow: 0px 0px 14px -5px rgba(0,0,0,0.7);
+}
+
+.txtMenu {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 20px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    
+    text-decoration: none;
+    color: white;
+}
+
+.formLogin {
+    margin-right: 300px;
+}
+
+.conteudo {
+    width: 80%;
+    height: 100%;
+    
+    max-width: 1500px;
+
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    min-height: 100%;
+    padding-bottom: 100px;
+
+    margin-bottom: 100px;
+}
+
+.subConteudo {
+    width: 1220px;
+    height: 100%;
+
+    max-width: 1220px;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    min-height: 100%;
+    padding-bottom: 100px;
+
+    margin-bottom: 100px;
+}
+
+.ipServidor_carregando {
+    background-color: white;
+
+    position: absolute;
+    top: 0px;
+    left: 0;
+
+    margin-left: 820px;
+
+    width: 400px;
+    height: 245px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+    visibility: hidden;
+}
+
+.ipServidor_carregado {
+    background-color: white;
+
+    position: absolute;
+    top: 0px;
+    left: 0;
+
+    margin-left: 820px;
+
+    width: 400px;
+    height: 245px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+}
+
+.discord {
+    position: absolute;
+    top: 255px;
+    left: 0;
+
+    margin-left: 820px;
+}
+
+.banner1_carregando {
+    background-color: white;
+
+    position: absolute;
+    top: 0px;
+    left: 0;
+
+    /*margin-left: 310px;*/
+
+    width: 400px;
+    height: 500px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+    visibility: hidden;
+}
+
+.banner2_carregando {
+    background-color: white;
+
+    position: absolute;
+    top: 0px;
+    left: 410px;
+
+    width: 400px;
+    height: 245px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+    visibility: hidden;
+}
+
+.banner3_carregando {
+    background-color: white;
+
+    position: absolute;
+    top: 255px;
+    left: 410px;
+
+    width: 400px;
+    height: 245px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+    visibility: hidden;
+}
+
+.banner4_carregando {
+    background-color: white;
+
+    position: absolute;
+    top: 510px;
+    left: 0;
+
+    /*margin-left: 310px;*/
+
+    width: 810px;
+    height: 245px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+    visibility: hidden;
+}
+
+.banner1_carregado {
+    background-color: white;
+
+    position: absolute;
+    top: 0px;
+    left: 0;
+
+    /*margin-left: 310px;*/
+
+    width: 400px;
+    height: 500px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+
+    visibility: visible;
+    opacity: 0;
+
+    transition: 0.3s;
+}
+
+.banner2_carregado {
+    background-color: white;
+
+    position: absolute;
+    top: 0px;
+    left: 410px;
+
+    width: 400px;
+    height: 245px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+
+    visibility: visible;
+    opacity: 0;
+
+    transition: 0.3s;
+}
+
+.banner3_carregado {
+    background-color: white;
+
+    position: absolute;
+    top: 255px;
+    left: 410px;
+
+    width: 400px;
+    height: 245px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+
+    visibility: visible;
+    opacity: 0;
+
+    transition: 0.3s;
+}
+
+.banner4_carregado {
+    background-color: white;
+    
+    position: absolute;
+    top: 510px;
+    left: 0;
+
+    /*margin-left: 310px;*/
+
+    width: 810px;
+    height: 245px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+
+    visibility: visible;
+    opacity: 0;
+
+    transition: 0.3s;
+}
+
+.noticia1_carregando {
+    background-color: white;
+
+    position: absolute;
+    top: 765px;
+    left: 0;
+
+    /*margin-left: 310px;*/
+
+    width: 810px;
+    height: 900px;
+
+    border-radius: 10px;
+
+    margin-bottom: 100px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+    visibility: hidden;
+}
+
+.noticia1_carregado {
+    background-color: white;
+    
+    position: absolute;
+    top: 765px;
+    left: 0;
+
+    /*margin-left: 310px;*/
+
+    width: 810px;
+    height: 900px;
+
+    border-radius: 10px;
+
+    margin-bottom: 100px;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+
+    visibility: visible;
+    opacity: 0;
+
+    transition: 0.3s;
+}
+
+.noticia1_imgFundo {
+    background-color: rgb(43, 43, 43);
+
+    /*background-image: url('../imagens/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;*/
+
+    position: absolute;
+    top: 100px;
+    left: 0;
+
+    width: 100%;
+    height: 100px;
+}
+
+.noticia1_avatarAutor {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    width: 70px;
+    height: 70px;
+
+    border-radius: 5px;
+}
+
+.noticia1_postadoPor {
+    font-family: 'Open Sans';
+    font-size: 15px;
+    color: black;
+
+    position: absolute;
+    top: 30px;
+    left: 100px;
+}
+
+.noticia1_data {
+    font-family: 'Open Sans';
+    font-size: 15px;
+    color: gray;
+
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+.noticia1_titulo {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: white;
+
+    position: absolute;
+    top: 22px;
+    left: 15px;
+}
+
+.noticia1_subTitulo {
+    font-family: 'Open Sans';
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+
+    position: absolute;
+    top: 45px;
+    left: 15px;
+}
+
+.noticia1_corpo {
+    position: absolute;
+    top: 215px;
+
+    margin-left: 40px;
+    margin-right: 40px;
+    
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(49, 49, 49);
+
+}
+
+.noticia1_rodape {
+    background-image: linear-gradient(to bottom, 
+    rgba(255, 255, 255, 0), 
+    rgba(255, 255, 255, 0.9)
+    100%);
+
+    position: absolute;
+    bottom: 0px;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    width: 100%;
+    height: 200px;
+}
+
+.noticia1_btn {
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+    background-color: rgb(0, 149, 253);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    border-color: transparent;
+    border-radius: 5px;
+
+    font-family: 'Open Sans';
+    font-size: 15px;
+    color: white;
+
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.7);
+
+    transition: 0.3s;
+}
+
+/*ANIMAÇÕES*/
+
+.txtMenu:hover {
+    background-color: rgb(0, 151, 229);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.banner1_carregado:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 0px rgba(87,142,224,1);
+}
+
+.banner1_carregado:hover img {
+    transform: scale(1.1);
+}
+
+.banner2_carregado:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 0px rgba(87,142,224,1);
+}
+
+.banner3_carregado:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 0px rgba(87,142,224,1);
+}
+
+.banner4_carregado:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 0px rgba(87,142,224,1);
+}
+
+.noticia1_btn:hover {
+    cursor: pointer;
+    background-color: rgb(0, 168, 252);
+}
+
+.btnPaginaAnterior:hover {
+    cursor: pointer;
+    background-color: rgb(0, 168, 252);
+}
+
+.btnProximaPagina:hover {
+    cursor: pointer;
+    background-color: rgb(0, 168, 252);
+}
+
+.animacao01 {
+    animation : shimmer 2s 1;
+    background: linear-gradient(to right, #eff1f3 4%, #e2e2e2 25%, #eff1f3 36%);
+    background-size: 1000px 100%;
+ }
+
+ .animacao02 {
+    animation : visualizarBanner 2s 1 forwards;
+ }
+
+ @keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+        visibility: visible;
+    }
+    100% {
+        background-position: 1000px 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@keyframes visualizarBanner {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
